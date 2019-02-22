@@ -312,6 +312,10 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+	
+# OTA
+PRODUCT_PACKAGES += \
+    Updates	
 
 # Power
 PRODUCT_PACKAGES += \
