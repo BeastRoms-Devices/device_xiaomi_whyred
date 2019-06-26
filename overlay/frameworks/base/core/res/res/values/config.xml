@@ -41,7 +41,7 @@
 
     <!-- Default value for led color when battery is fully charged -->
     <integer name="config_notificationsBatteryFullARGB">0xFF00FF00</integer>
-	
+
 	<!-- Does the battery LED support multiple colors?
                  Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">false</bool>
@@ -210,10 +210,10 @@
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
     <bool name="config_camera_sound_forced">false</bool>
 
-    <!-- Configuration to enable non-default PDP during IWLAN 
+    <!-- Configuration to enable non-default PDP during IWLAN
     <bool name="config_feature_iwlan_enabled">true</bool> -->
 
-    <!-- Is the device capable of supporting digital pen 
+    <!-- Is the device capable of supporting digital pen
     <bool name="config_digitalPenCapable">true</bool> -->
 
     <!-- Flag specifying whether VoLTE, VT and WFC is available on device -->
@@ -585,4 +585,9 @@
 
     <!-- Should we filter any display modes which are unampped? -->
     <bool name="config_filterDisplayModes">true</bool>
+
+    <!-- Smart charge sysfs node and value for suspend/resume charging-->
+      <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+      <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
+      <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 </resources>
