@@ -268,7 +268,7 @@ on boot
 
     # Create pa-cal driver directory lct-20180914
     mkdir /mnt/vendor/persist/audio 0770 root root
-    
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -682,9 +682,6 @@ on charger
 on property:init.svc.surfaceflinger=restarting
     stop  vendor.hwcomposer-2-1
     start vendor.hwcomposer-2-1
-
-on property:vendor.display.lcd_density=*
-    setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
 service time_daemon /system/vendor/bin/time_daemon
     class main
